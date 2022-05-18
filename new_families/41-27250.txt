@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+264593	4	3261.5077	163	COG1271+,COG1294+,COG4988+,COG4987+	Energy production and conversion	27250
+116460	4	509.6051	28	COG4988+,COG4987+,COG1271+,COG1294+	Energy production and conversion	27250
+162793	4	357.2198	20	COG4987-,COG4988-,COG1271+,COG1294+	Energy production and conversion	27250

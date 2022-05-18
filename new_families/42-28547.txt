@@ -1,0 +1,8 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+142847	4	2032.0296	104	COG1091-,COG1898-,COG1209-,COG1088-	Cell wall/membrane/envelope biogenesis	28547
+160860	4	1745.0312	90	COG1898-,COG1209-,COG1091-,COG1088-	Cell wall/membrane/envelope biogenesis	28547
+58423	4	1198.4581	63	COG1091-,COG1088-,COG1898-,COG1209-	Cell wall/membrane/envelope biogenesis	28547
+46529	4	1038.6517	55	COG1088-,COG1091-,COG1898-,COG1209-	Cell wall/membrane/envelope biogenesis	28547
+228806	4	683.833	37	COG1898+,COG1088+,COG1091+,COG1209+	Cell wall/membrane/envelope biogenesis	28547
+105646	4	509.6051	28	COG1088+,COG1209+,COG1091+,COG1898+	Cell wall/membrane/envelope biogenesis	28547
+33822	4	395.0535	22	COG1209+,COG1088+,COG1091+,COG1898+	Cell wall/membrane/envelope biogenesis	28547

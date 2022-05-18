@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+300981	4	2507.8326	127	COG1060-,COG2022-,COG2104-,COG0476-	Coenzyme transport and metabolism	25375
+249339	4	319.5891	18	COG0476-,COG1060-,COG2022-,COG2104-	Coenzyme transport and metabolism	25375
+185432	4	189.8611	11	COG1060-,COG2022-,COG0476-,COG2104-	Coenzyme transport and metabolism	25375

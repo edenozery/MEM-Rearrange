@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+145601	5	6155.9749	217	COG0135-,COG0134-,COG0547-,COG0512-,COG0147-	Amino acid transport and metabolism	20007
+53559	5	464.5476	18	COG0547+,COG0135+,COG0147+,COG0512+,COG0134+	Amino acid transport and metabolism	20007
+36048	5	411.0358	16	COG0134+,COG0547+,COG0147+,COG0512+,COG0135+	Amino acid transport and metabolism	20007

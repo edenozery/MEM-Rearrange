@@ -9,7 +9,7 @@ setup(
     url='',
     license='',
     author='Eden',
-    author_email='',
+    author_email='edenozery@gmail.com',
     description='',
     console=['main.py']
 )

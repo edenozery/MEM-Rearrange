@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+277916	4	586.7225	32	COG0583-,COG4948+,COG4829+,COG3485+	Secondary metabolites biosynthesis, transport and catabolism	30976
+125660	4	395.0535	22	COG0583-,COG4948+,COG3485+,COG4829+	Secondary metabolites biosynthesis, transport and catabolism	30976
+8006	4	171.6445	10	COG0583+,COG4948+,COG3485+,COG4829+	Secondary metabolites biosynthesis, transport and catabolism	30976

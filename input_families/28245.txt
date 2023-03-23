@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+18033	4	722.8767	39	COG0368-,COG0406-,COG2038-,COG2087-	Coenzyme transport and metabolism	28245
+22717	4	414.0407	23	COG0406-,COG0368-,COG2038-,COG2087-	Coenzyme transport and metabolism	28245
+163902	4	282.1838	16	COG2038+,COG0368+,COG2087+,COG0406+	Coenzyme transport and metabolism	28245

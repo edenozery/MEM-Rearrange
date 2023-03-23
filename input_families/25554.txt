@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+279815	4	2238.2868	114	COG0559+,COG4177+,COG0683+,COG0410+	Amino acid transport and metabolism	25554
+90283	4	1683.8225	87	COG4177-,COG0559-,COG0683-,COG0410-	Amino acid transport and metabolism	25554
+31320	4	208.1694	12	COG0683+,COG0559+,COG4177+,COG0410+	Amino acid transport and metabolism	25554

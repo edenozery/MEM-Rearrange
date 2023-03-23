@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+16601	4	801.2754	43	COG1538+,COG0845+,COG3696+,COG5569+	Inorganic ion transport and metabolism/Cell wall/membrane/envelope biogenesis	27851
+26512	4	742.4384	40	COG3696-,COG0845-,COG5569-,COG1538-	Inorganic ion transport and metabolism/Cell wall/membrane/envelope biogenesis	27851
+13056	4	282.1838	16	COG3696-,COG0845-,COG1538-,COG5569-	Inorganic ion transport and metabolism/Cell wall/membrane/envelope biogenesis	27851

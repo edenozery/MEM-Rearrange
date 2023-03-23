@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+325483	4	762.0259	41	COG1556-,COG1139-,COG0247-,COG2186-	Energy production and conversion	27530
+58414	4	452.1458	25	COG2186-,COG0247+,COG1139+,COG1556+	Energy production and conversion	27530
+39859	4	226.5618	13	COG2186-,COG0247+,COG1556+,COG1139+	Energy production and conversion	27530

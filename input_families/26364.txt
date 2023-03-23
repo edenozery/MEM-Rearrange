@@ -1,0 +1,6 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+108201	4	1785.8963	92	COG0735+,COG0803+,COG1121+,COG1108+	Inorganic ion transport and metabolism	26364
+146544	4	860.328	46	COG0735-,COG1108-,COG1121-,COG0803-	Inorganic ion transport and metabolism	26364
+173543	4	357.2198	20	COG1108-,COG1121-,COG0803-,COG0735+	Inorganic ion transport and metabolism	26364
+282386	4	189.8611	11	COG0803-,COG1108-,COG1121-,COG0735+	Inorganic ion transport and metabolism	26364
+101138	4	171.6445	10	COG0803-,COG1121+,COG0735-,COG1108+	Inorganic ion transport and metabolism	26364

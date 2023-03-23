@@ -11,5 +11,5 @@ setup(
     author='Eden',
     author_email='',
     description='',
-    console=['main_all.py']
+    console=['main.py']
 )

@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+256	5	1230.7776	46	COG1845-,COG0843-,COG1622-,COG0109-,COG1612+	Energy production and conversion	15297
+131651	5	735.0962	28	COG1845-,COG0843-,COG1622-,COG1612+,COG0109+	Energy production and conversion	15297
+47874	5	357.7774	14	COG1622+,COG0843+,COG1612+,COG0109+,COG1845+	Energy production and conversion	15297

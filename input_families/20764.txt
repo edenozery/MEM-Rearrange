@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+10690	4	1399.6978	73	COG2182+,COG1175+,COG3833+,COG0366+	Carbohydrate transport and metabolism	20764
+40845	4	1198.4581	63	COG3833-,COG1175-,COG2182-,COG0366+	Carbohydrate transport and metabolism	20764
+31357	4	899.8095	48	COG0366+,COG2182+,COG1175+,COG3833+	Carbohydrate transport and metabolism	20764

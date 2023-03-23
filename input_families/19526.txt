@@ -1,0 +1,5 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+72085	4	1929.2834	99	COG1352-,COG0840-,COG0835-,COG0643-	Signal transduction mechanisms/Cell motility	19526
+55496	4	703.3413	38	COG1352+,COG0835+,COG0840+,COG0643+	Signal transduction mechanisms/Cell motility	19526
+77579	4	452.1458	25	COG0643+,COG0840+,COG0835+,COG1352+	Signal transduction mechanisms/Cell motility	19526
+147415	4	395.0535	22	COG0643-,COG1352-,COG0840-,COG0835-	Signal transduction mechanisms/Cell motility	19526

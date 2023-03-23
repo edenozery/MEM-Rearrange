@@ -1,0 +1,10 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+141782	4	979.0275	52	COG1879+,COG1129+,COG1172+,COG1609+	Carbohydrate transport and metabolism	18995
+218907	4	625.4772	34	COG1609+,COG1879+,COG1129+,COG1172+	Carbohydrate transport and metabolism	18995
+92750	4	528.8328	29	COG1609+,COG1129+,COG1172+,COG1879+	Carbohydrate transport and metabolism	18995
+308418	4	433.0721	24	COG1609-,COG1879+,COG1129+,COG1172+	Carbohydrate transport and metabolism	18995
+256155	4	282.1838	16	COG1609-,COG1879+,COG1172+,COG1129+	Carbohydrate transport and metabolism	18995
+107463	4	263.5741	15	COG1609+,COG1172-,COG1129-,COG1879-	Carbohydrate transport and metabolism	18995
+208433	4	226.5618	13	COG1129+,COG1172+,COG1879+,COG1609+	Carbohydrate transport and metabolism	18995
+157577	4	189.8611	11	COG1609+,COG1879+,COG1172+,COG1129+	Carbohydrate transport and metabolism	18995
+229435	4	189.8611	11	COG1609-,COG1129+,COG1172+,COG1879+	Carbohydrate transport and metabolism	18995

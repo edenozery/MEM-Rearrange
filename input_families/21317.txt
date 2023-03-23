@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+5148	5	2242.4207	82	COG0375+,COG0378+,COG0298+,COG0409+,COG0309+	Posttranslational modification, protein turnover, chaperones	21317
+121837	5	789.6933	30	COG0378+,COG0298+,COG0409+,COG0309+,COG0375+	Posttranslational modification, protein turnover, chaperones	21317
+8487	5	464.5476	18	COG0378-,COG0375-,COG0309-,COG0409-,COG0298-	Posttranslational modification, protein turnover, chaperones	21317

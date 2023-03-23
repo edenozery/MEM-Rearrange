@@ -1,0 +1,6 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+265240	4	5571.2115	271	COG0119+,COG0473+,COG0065+,COG0066+	Amino acid transport and metabolism	20332
+14921	4	2176.3063	111	COG0119+,COG0065+,COG0066+,COG0473+	Amino acid transport and metabolism	20332
+189091	4	471.2602	26	COG0119-,COG0473-,COG0066-,COG0065-	Amino acid transport and metabolism	20332
+85290	4	319.5891	18	COG0065+,COG0066+,COG0119+,COG0473+	Amino acid transport and metabolism	20332
+10241	4	171.6445	10	COG0473+,COG0119+,COG0065+,COG0066+	Amino acid transport and metabolism	20332

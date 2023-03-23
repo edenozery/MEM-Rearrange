@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+94063	5	2242.4207	82	COG0304-,COG1028-,COG0331-,COG2070-,COG0236-	Lipid transport and metabolism	19610
+11667	5	899.2877	34	COG2070+,COG0331+,COG1028+,COG0236+,COG0304+	Lipid transport and metabolism	19610
+3784	5	252.177	10	COG0331+,COG1028+,COG0236+,COG2070+,COG0304+	Lipid transport and metabolism	19610

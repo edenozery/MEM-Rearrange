@@ -1,0 +1,4 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+176362	4	801.2754	43	COG2080+,COG1319+,COG1529+,COG1975+	Energy production and conversion	22181
+130871	4	548.0957	30	COG1319+,COG2080+,COG1529+,COG1975+	Energy production and conversion	22181
+47832	4	338.3777	19	COG1975+,COG1319+,COG2080+,COG1529+	Energy production and conversion	22181

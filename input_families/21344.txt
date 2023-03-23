@@ -1,0 +1,5 @@
+CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
+55415	4	1118.4136	59	COG0642-,COG0745-,COG0845+,COG0841+	Signal transduction mechanisms/Defense mechanisms	21344
+85584	4	644.9001	35	COG0642-,COG0745-,COG0841-,COG0845-	Signal transduction mechanisms/Defense mechanisms	21344
+229706	4	208.1694	12	COG0841-,COG0845-,COG0642+,COG0745+	Signal transduction mechanisms/Defense mechanisms	21344
+12301	4	171.6445	10	COG0745+,COG0642+,COG0845+,COG0841+	Signal transduction mechanisms/Defense mechanisms	21344

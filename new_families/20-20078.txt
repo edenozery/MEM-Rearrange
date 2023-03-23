@@ -1,4 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-65362	4	8821.1951	419	COG1744+,COG3845+,COG4603+,COG1079+	General function prediction only	20078
-12560	4	2300.353	117	COG3845+,COG4603+,COG1079+,COG1744+	General function prediction only	20078
-64934	4	226.5618	13	COG3845-,COG1079-,COG4603-,COG1744-	General function prediction only	20078

@@ -1,4 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-217524	7	3474.14	80	COG5002-,COG0745-,COG0704-,COG1117-,COG0581-,COG0573-,COG0226-	Inorganic ion transport and metabolism	8962
-52475	7	2147.317	50	COG0704-,COG1117-,COG0581-,COG0573-,COG0226-,COG5002-,COG0745-	Inorganic ion transport and metabolism	8962
-38639	7	1927.7667	45	COG0745-,COG0704-,COG1117-,COG0581-,COG0573-,COG0226-,COG5002-	Inorganic ion transport and metabolism	8962

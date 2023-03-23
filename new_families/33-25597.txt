@@ -1,6 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-88127	4	6441.1786	311	COG0747+,COG0601+,COG1173+,COG1123+	Amino acid transport and metabolism	25597
-196492	4	3726.621	185	COG1123+,COG0747+,COG0601+,COG1173+	Amino acid transport and metabolism	25597
-37570	4	1038.6517	55	COG1123+,COG0601+,COG1173+,COG0747+	Amino acid transport and metabolism	25597
-68491	4	452.1458	25	COG0747-,COG1123-,COG1173-,COG0601-	Amino acid transport and metabolism	25597
-128215	4	282.1838	16	COG1123-,COG0601+,COG1173+,COG0747+	Amino acid transport and metabolism	25597

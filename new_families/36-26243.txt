@@ -1,5 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-58096	4	1339.1654	70	COG0395-,COG1175-,COG1653-,COG1940-	Carbohydrate transport and metabolism	26243
-58093	4	1298.8851	68	COG0395-,COG1175-,COG1653-,COG1940+	Carbohydrate transport and metabolism	26243
-22987	4	722.8767	39	COG1940-,COG0395-,COG1175-,COG1653-	Carbohydrate transport and metabolism	26243
-182248	4	282.1838	16	COG1653-,COG0395-,COG1175-,COG1940-	Carbohydrate transport and metabolism	26243

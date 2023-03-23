@@ -1,6 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-95796	4	2528.6289	128	COG1116-,COG0600-,COG2141-,COG0715-	Inorganic ion transport and metabolism	20601
-83552	4	528.8328	29	COG2141-,COG0600-,COG0715-,COG1116-	Inorganic ion transport and metabolism	20601
-104489	4	528.8328	29	COG2141-,COG1116-,COG0600-,COG0715-	Inorganic ion transport and metabolism	20601
-247937	4	282.1838	16	COG2141-,COG0715-,COG1116-,COG0600-	Inorganic ion transport and metabolism	20601
-44835	4	245.0319	14	COG0715+,COG1116+,COG0600+,COG2141+	Inorganic ion transport and metabolism	20601

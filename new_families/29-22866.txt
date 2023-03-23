@@ -1,6 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-120712	4	1339.1654	70	COG0745+,COG0642+,COG1136+,COG4591+	Signal transduction mechanisms/Cell wall/membrane/envelope biogenesis	22866
-94570	4	703.3413	38	COG0642-,COG0745-,COG4591-,COG1136-	Signal transduction mechanisms/Cell wall/membrane/envelope biogenesis	22866
-2622	4	263.5741	15	COG0642-,COG0745-,COG4591+,COG1136+	Signal transduction mechanisms/Cell wall/membrane/envelope biogenesis	22866
-299131	4	245.0319	14	COG0745+,COG0642+,COG4591+,COG1136+	Signal transduction mechanisms/Cell wall/membrane/envelope biogenesis	22866
-5292	4	208.1694	12	COG1136+,COG4591+,COG0642-,COG0745-	Signal transduction mechanisms/Cell wall/membrane/envelope biogenesis	22866

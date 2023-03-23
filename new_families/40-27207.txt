@@ -1,8 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-17436	4	3114.1991	156	COG1538-,COG0841-,COG0845-,COG1309+	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207
-7535	4	1582.0541	82	COG0841-,COG0845-,COG1538-,COG1309-	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207
-17438	4	1399.6978	73	COG1538-,COG0841-,COG0845-,COG1309-	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207
-184461	4	820.9363	44	COG0841-,COG0845-,COG1309-,COG1538+	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207
-308616	4	509.6051	28	COG1309-,COG1538-,COG0841-,COG0845-	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207
-7533	4	189.8611	11	COG0841-,COG0845-,COG1538-,COG1309+	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207
-203988	4	189.8611	11	COG1309+,COG1538-,COG0841-,COG0845-	Defense mechanisms/Cell wall/membrane/envelope biogenesis	27207

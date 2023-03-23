@@ -1,5 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-11162	4	2445.4953	124	COG1131+,COG0842+,COG4585+,COG2197+	Signal transduction mechanisms/Defense mechanisms	21268
-91690	4	452.1458	25	COG2197+,COG4585+,COG1131+,COG0842+	Signal transduction mechanisms/Defense mechanisms	21268
-135463	4	433.0721	24	COG4585+,COG2197+,COG1131+,COG0842+	Signal transduction mechanisms/Defense mechanisms	21268
-11769	4	245.0319	14	COG2197-,COG4585-,COG1131+,COG0842+	Signal transduction mechanisms/Defense mechanisms	21268

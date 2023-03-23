@@ -1,4 +1,0 @@
-CSB_ID	Length	Score	Instance_Count	CSB	Main_Category	Family_ID
-2549	4	1949.8114	100	COG4770-,COG1024-,COG4799-,COG1960-	Lipid transport and metabolism	22299
-105501	4	606.0844	33	COG4799+,COG4770+,COG1960+,COG1024+	Lipid transport and metabolism	22299
-282333	4	567.3927	31	COG4770-,COG1024-,COG1960-,COG4799-	Lipid transport and metabolism	22299

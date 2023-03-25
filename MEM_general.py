@@ -715,14 +715,12 @@ def run_MEM_pairwise(path, d_T, d_S):  # pairwise: every CSB against every CSB
     return MEM2, pqtrees_list
 
 
-def get_all_MEM_Rearrange_dicts(outlier_panal, bp_qnode_penal, qnode_flip_penal, d_T, d_S, delete_T_penal, delete_S_penal, jump_penal):   # runs MEM-rearrange for each input file
-    global outlier_panalty
+def get_all_MEM_Rearrange_dicts(bp_qnode_penal, qnode_flip_penal, d_T, d_S, delete_T_penal, delete_S_penal, jump_penal):   # runs MEM-rearrange for each input file
     global bp_qnode_penalty
     global qnode_flip_penalty
     global delete_T_penalty
     global delete_S_penalty
     global jump_penalty
-    outlier_panalty = outlier_panal
     bp_qnode_penalty = bp_qnode_penal
     qnode_flip_penalty = qnode_flip_penal
     delete_T_penalty = delete_T_penal

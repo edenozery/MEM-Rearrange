@@ -192,7 +192,7 @@ def get_jaccard_index_dict(path):
 
 def get_all_jaccard_index_dicts():
     print("\n\n---------- calculating jaccard index ---------------\n")
-    instances_files_paths = glob.glob(r'new_families/*.fasta')
+    instances_files_paths = glob.glob(r'input_families/*.fasta')
 
     all_edges_dict = {}
     jacard_index_by_file_dict = {}

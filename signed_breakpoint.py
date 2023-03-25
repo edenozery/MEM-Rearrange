@@ -62,6 +62,7 @@ def get_breakpoint_from_file(csbs_file_path):
     csbs_file_lines = open(csbs_file_path).readlines()
     csbs_file2_lines = open(csbs_file_path).readlines()
     bp_dict = {}
+    print("Signed Break-point distances:")
     for line in csbs_file_lines:
         if line[0] != 'C' and line[0] != "":
             splited_line = line.split('\t')
@@ -77,6 +78,7 @@ def get_breakpoint_from_file(csbs_file_path):
                     csb2 = splited_line2[4]
                     bp_dict[splited_line[0]][splited_line2[0]] = get_bp_from_children_orders(csb1, csb2)
 
+            print(splited_line[0], ":     ", bp_dict[splited_line[0]])
     return bp_dict
 
 
@@ -91,27 +93,20 @@ def print_all_jaccard_index_dicts(jacard_index_by_file_dict):
 
 
 def get_all_signed_breakpoint_dicts():
-    print("\n\n---------- calculating break point ---------------\n")
-    csbs_files_paths = glob.glob(r'new_families\*.txt')
+    csbs_files_paths = glob.glob(r'input_families\*.txt')
 
     breakpoint_by_file_dict = {}
     for path in csbs_files_paths:
-        print(path)
+        file_name = path[15:].split(".")[0]
+        print("\n---------------------------------------", file_name, "---------------------------------------\n")
         breakpoint_dict = get_breakpoint_from_file(path)
-        file_name = path[13:].split(".")[0]
         breakpoint_by_file_dict[file_name] = breakpoint_dict
 
     return breakpoint_by_file_dict
 
 
 def main():
-    # breakpoint_by_file_dict = get_all_breakpoint_dicts()
-    # print_all_jaccard_index_dicts(breakpoint_by_file_dict)
-    print(get_breakpoint_from_file(r'all_examples/14796.txt'))
-
-    # print("------------------------------------------------------------")
-    # print(get_bp_from_children_orders("COG1117-,COG0581-,COG0573-,COG0226-,COG0704-", "COG1117-,COG0581-,COG0573-,COG0226-,COG0704-"))
-
+    get_all_signed_breakpoint_dicts()
 
 if __name__ == '__main__':
     main()

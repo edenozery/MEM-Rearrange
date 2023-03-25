@@ -802,7 +802,7 @@ def get_all_MEM4_dicts(outlier_panal, bp_qnode_penal, qnode_flip_penal):
     qnode_flip_penalty = qnode_flip_penal
 
     #print("\n\n---------- calculating MEM4 ---------------\n")
-    csbs_files_paths = glob.glob(r'all_examples2\*.txt')
+    csbs_files_paths = glob.glob(r'input_families\*.txt')
 
     MEM4_by_file_dict = {}
     for path in csbs_files_paths:
@@ -825,7 +825,7 @@ def change_keys(MEM4_by_file_dict):
     new_dict = {}
     for path in MEM4_by_file_dict.keys():
         new_dict[path] = {}
-        csbs_names_dict = get_csbs_names_dict("new_families/" + path + ".txt")
+        csbs_names_dict = get_csbs_names_dict("input_families/" + path + ".txt")
         for key1 in MEM4_by_file_dict[path].keys():
             new_dict[path][csbs_names_dict[key1]] = {}
             for key2 in MEM4_by_file_dict[path].keys():
@@ -851,7 +851,9 @@ def main():
 
     # print(run_MEM4("all_examples/onlyP.txt"))
 
-    print(run_MEM4("all_examples2/26238.txt"))
+    # print(run_MEM4("all_examples2/26238.txt"))
+
+    get_all_MEM4_dicts(outlier_panalty, bp_qnode_penalty, qnode_flip_penalty)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

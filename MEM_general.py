@@ -727,6 +727,8 @@ def get_all_MEM_Rearrange_dicts(bp_qnode_penal, qnode_flip_penal, d_T, d_S, dele
     delete_S_penalty = delete_S_penal
     jump_penalty = jump_penal
 
+    print("\n---------- calculating MEM_general ---------------\n\n")
+
     csbs_files_paths = glob.glob(r'input_families\*.txt')
 
     MEM4_by_file_dict = {}
@@ -735,13 +737,13 @@ def get_all_MEM_Rearrange_dicts(bp_qnode_penal, qnode_flip_penal, d_T, d_S, dele
         file_name = path[15:].split(".")[0]
         print("\n---------------------------------------", file_name, "---------------------------------------\n")
 
-        MEM4_dict, pqtrees_list = run_MEM_first_CSB(path, d_T, d_S)  # runs all CSBs against the first CSB
-        # MEM4_dict, pqtrees_list = run_MEM_pairwise(path, d_T, d_S)  # runs pairwise
+        # MEM4_dict, pqtrees_list = run_MEM_first_CSB(path, d_T, d_S)  # runs all CSBs against the first CSB
+        MEM4_dict, pqtrees_list = run_MEM_pairwise(path, d_T, d_S)  # runs pairwise
 
         MEM4_by_file_dict[file_name] = MEM4_dict
         pqtrees_list_dict[file_name] = pqtrees_list
 
-    return MEM4_by_file_dict, pqtrees_list_dict
+    return MEM4_by_file_dict
 
 
 

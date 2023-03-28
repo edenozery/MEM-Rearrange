@@ -93,6 +93,7 @@ def print_all_jaccard_index_dicts(jacard_index_by_file_dict):
 
 
 def get_all_signed_breakpoint_dicts():
+    print("\n---------- calculating signed breakpoint ---------------\n\n")
     csbs_files_paths = glob.glob(r'input_families\*.txt')
 
     breakpoint_by_file_dict = {}
@@ -105,10 +106,10 @@ def get_all_signed_breakpoint_dicts():
     return breakpoint_by_file_dict
 
 
-def main():
-    get_all_signed_breakpoint_dicts()
-
-if __name__ == '__main__':
-    main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# def main():
+#     breakpoint_dict = get_all_signed_breakpoint_dicts()
+#
+# if __name__ == '__main__':
+#     main()
+#
+# # See PyCharm help at https://www.jetbrains.com/help/pycharm/

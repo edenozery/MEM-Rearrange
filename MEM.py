@@ -7,8 +7,6 @@ from copy import deepcopy
 
 import glob
 
-import math
-
 
 def get_pattern_from_csb_line(csb_line, csbs_names_dict):
     first_csbs_list = csb_line.split('\t')[4].split(',')
@@ -24,35 +22,8 @@ def get_pattern_list_from_csb_line(csb_line, csbs_names_dict):
     return pattern
 
 
-# def print_pqtree_from_csbs_file_path(csbs_file_path):
-#     csbs_file_lines = open(csbs_file_path).readlines()
-#     # #print(csbs_file_lines[1].split('\t')[4].split(','))
-#     first_csbs_list = csbs_file_lines[1].split('\t')[4].split(',')
-#     csbs_names_dict = {}
-#     for i in range(len(first_csbs_list)):
-#         csbs_names_dict[first_csbs_list[i][:-1]] = i
-#
-#     perms = []
-#     for line in csbs_file_lines[1:]:
-#         perms.append(get_pattern_from_csb_line(line, csbs_names_dict))
-#
-#     # #print(perms)
-#
-#     strs = {"".join(str(x) for x in p) for p in perms}
-#
-#     common_intervals_trivial = trivial_common_k_with_singletons(*perms)
-#     common_intervals = common_k_indexed_with_singletons(*perms)
-#
-#     ir_intervals = ReduceIntervals.reduce(common_intervals)
-#     s = IntervalHierarchy.from_irreducible_intervals(ir_intervals)
-#
-#     pqtree = PQTreeBuilder._from_s(s)
-#     # #print(pqtree.to_parens())
-
-
 def get_pqtree_from_csbs_file_path_by_index(csbs_file_path, index):
     csbs_file_lines = open(csbs_file_path).readlines()
-    # #print(csbs_file_lines[1].split('\t')[4].split(','))
     first_csbs_list = csbs_file_lines[1].split('\t')[4].split(',')
     csbs_names_dict = {}
     for i in range(len(first_csbs_list)):
@@ -61,7 +32,6 @@ def get_pqtree_from_csbs_file_path_by_index(csbs_file_path, index):
     perms = []
     for line in csbs_file_lines[1:]:
         perms.append(get_pattern_from_csb_line(line, csbs_names_dict))
-    # #print(perms)
 
     perms, index_dict, index_dict_reverse = get_perms_by_index(perms, index)
 
@@ -313,7 +283,7 @@ def get_jumping_penalty(co_tree, co_string, children_span_list):
             if is_jumped:
                 edges.append((int(tup1[0]), int(tup1[1])))
 
-    weighted_vertex_list = [(span-1)/2 for span in children_span_list]
+    weighted_vertex_list = [jump_penalty * (span-1)/2 for span in children_span_list]
     minimum_VC, a = get_minimum_weighted_vertex_cover(vertexes, edges, weighted_vertex_list)
 
     return minimum_VC
@@ -499,175 +469,12 @@ def calculate_MEM2(pqtree_node, csb, A):
     return A
 
 
-# def remove_and_get_line(fileName, lineToSkip):
-#     """ Removes a given line from a file """
-#     with open(fileName, 'r') as read_file:
-#         lines = read_file.readlines()
-#
-#     line_skipped = 0
-#     currentLine = 0
-#     with open(fileName, 'w') as write_file:
-#         for line in lines:
-#             if currentLine == lineToSkip+1:
-#                 line_skipped = line
-#             else:
-#                 write_file.write(line)
-#
-#             currentLine += 1
-#
-#     return line_skipped
-
-
-# def write_line_at_index(fileName, index, lineToWrite):
-#     """ Removes a given line from a file """
-#     with open(fileName, 'r') as read_file:
-#         lines = read_file.readlines()
-#
-#
-#     currentLine = 0
-#     with open(fileName, 'w') as write_file:
-#         for line in lines:
-#             if currentLine == index:
-#                 write_file.write(line)
-#                 write_file.write(lineToWrite)
-#             else:
-#                 write_file.write(line)
-#
-#             currentLine += 1
-
-
-def count_num_of_internal_nodes(pq_tree_string):
-    sum = 0
-    for c in pq_tree_string:
-        if c == '[':
-            sum += 1
-    return sum
-
-
 def get_num_of_csbs_in_file(path):
     num = 0
     with open(path, 'r') as read_file:
         lines = read_file.readlines()
         num = len(lines) - 1
     return num
-
-
-# def find_outliers(path):    # returns the outlier's index or -1 if not exist
-#     num_of_csbs = get_num_of_csbs_in_file(path)
-#     all_pq_tree_string = get_pqtree_from_csbs_file_path_by_index(path, 0)
-#     all_internal_nodes = count_num_of_internal_nodes(all_pq_tree_string)
-#     # #print("------------ all ", all_pq_tree_string, all_internal_nodes)
-#
-#     outlier = -1
-#     num_outliers = 0
-#     for i in range(num_of_csbs):
-#         line_removed = remove_and_get_line(path, i)     # removing line at index i
-#
-#         pq_tree_string = get_pqtree_from_csbs_file_path_by_index(path, 0)
-#         internal_nodes = count_num_of_internal_nodes(pq_tree_string)
-#
-#         # #print("------------", i, pq_tree_string, internal_nodes)
-#         if internal_nodes > all_internal_nodes:
-#             outlier = i
-#             num_outliers += 1
-#
-#         write_line_at_index(path, i, line_removed)     # writing the line at index i
-#
-#     #print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! num of outliers:", num_outliers, "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n")
-#
-#     # if num_outliers > 1:
-#     #     outlier = -1
-#
-#     return outlier
-
-def calculate_s_score_node(node):
-    pnodes_childs = []
-    qnodes_num = 0
-
-    if node.type == "Q":
-        qnodes_num = 1
-
-    if node.type == "P":
-        pnodes_childs = [len(node.children)]
-
-    for child in node.children:
-        if type(child) is Leaf:
-            continue
-        pnodes_childs_child, qnodes_num_cild = calculate_s_score_node(child)
-        pnodes_childs.extend(pnodes_childs_child)
-        qnodes_num += qnodes_num_cild
-
-
-    return pnodes_childs, qnodes_num
-
-
-def calculate_s_score(pq_tree):
-    pnodes_childs, qnodes_num = calculate_s_score_node(pq_tree)
-    pnodes_factorial_mult = 1
-    for pnodes_num in pnodes_childs:
-        pnodes_factorial_mult = pnodes_factorial_mult*math.factorial(pnodes_num)
-
-    score_down = math.pow(2, qnodes_num)*pnodes_factorial_mult
-    score_up = math.factorial(pq_tree.span)
-    score = score_up/score_down
-    return score
-
-# def find_outliers2(path):    # returns the outlier's index or -1 if not exist
-#     num_of_csbs = get_num_of_csbs_in_file(path)
-#     all_pq_tree= get_pqtree_from_file_and_index(path, 0)
-#     all_s_score = calculate_s_score(all_pq_tree)
-#     # #print("------------ all ", all_pq_tree_string, all_internal_nodes)
-#
-#     outlier = -1
-#     num_outliers = 0
-#     for i in range(num_of_csbs):
-#         line_removed = remove_and_get_line(path, i)     # removing line at index i
-#
-#         pq_tree = get_pqtree_from_file_and_index(path, 0)
-#         s_score = calculate_s_score(pq_tree)
-#
-#         # #print("------------", i, pq_tree_string, internal_nodes)
-#         if s_score > all_s_score:
-#             outlier = i
-#             num_outliers += 1
-#
-#         write_line_at_index(path, i, line_removed)     # writing the line at index i
-#
-#     return outlier
-
-
-def get_pqtrees_dict_with_outliers(path):
-    outlier_index = find_outliers2(path)
-
-    if outlier_index == -1:     # there is no outliers
-        num_of_csbs = get_num_of_csbs_in_file(path)
-        pqtree_dict = {}
-        for i in range(num_of_csbs):
-            pqtree_dict[i] = {}
-            pqtree_dict[i]["no_outlier"] = get_pqtree_from_file_and_index(path, i)
-            pqtree_dict[i]["with_outlier"] = pqtree_dict[i]["no_outlier"]
-
-        return pqtree_dict, outlier_index
-
-
-    num_of_csbs = get_num_of_csbs_in_file(path)
-
-    outlier_line_removed = remove_and_get_line(path, outlier_index)
-
-    pqtree_dict = {}
-    for i in range(num_of_csbs):
-        pqtree_dict[i] = {}
-        if i < outlier_index:
-            pqtree_dict[i]["no_outlier"] = get_pqtree_from_file_and_index(path, i)
-        if i > outlier_index:
-            pqtree_dict[i]["no_outlier"] = get_pqtree_from_file_and_index(path, i-1)
-
-    write_line_at_index(path, outlier_index, outlier_line_removed)  # writing the line at index i
-
-    for i in range(num_of_csbs):
-        pqtree_dict[i]["with_outlier"] = get_pqtree_from_file_and_index(path, i)
-
-    return pqtree_dict, outlier_index
 
 
 def get_pqtrees(path):
@@ -713,14 +520,15 @@ def run_MEM4(path):
     return MEM2
 
 
-def get_all_MEM4_dicts(bp_qnode_penal, qnode_flip_penal):
-    global outlier_panalty
+def get_all_MEM4_dicts(bp_qnode_penal, qnode_flip_penal, jump_penal):
     global bp_qnode_penalty
     global qnode_flip_penalty
+    global jump_penalty
     bp_qnode_penalty = bp_qnode_penal
     qnode_flip_penalty = qnode_flip_penal
+    jump_penalty = jump_penal
 
-    #print("\n\n---------- calculating MEM4 ---------------\n")
+    print("\n---------- calculating MEM ---------------\n\n")
     csbs_files_paths = glob.glob(r'input_families\*.txt')
 
     MEM4_by_file_dict = {}
@@ -732,21 +540,3 @@ def get_all_MEM4_dicts(bp_qnode_penal, qnode_flip_penal):
 
     return MEM4_by_file_dict
 
-
-def main():
-    # MEM4_by_file_dict = get_all_MEM4_dicts()
-    # print_all_MEM4_dicts(MEM4_by_file_dict)
-    # global outlier_panalty
-    global bp_qnode_penalty
-    global qnode_flip_penalty
-    # outlier_panalty = 3.6
-    bp_qnode_penalty = 2.7
-    qnode_flip_penalty = 1
-
-    get_all_MEM4_dicts(bp_qnode_penalty, qnode_flip_penalty)
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

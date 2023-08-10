@@ -18,6 +18,7 @@ The data used in the expirement of the paper, is placed in the folder "input_fam
 --------
 The input files format is as follows.
 For each CSB in the cluster, there is a line in the next format:
+
 <CSB_ID><\t><Length><\t><Score><\t>Instance_Count><\t><CSB><\t><Main_Category><\t><Family_ID>
 Please see an example in the folder "input_families".
 

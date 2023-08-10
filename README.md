@@ -13,7 +13,7 @@ MEM-Rearrange is an implementation of the algorithms described in the paper **Ne
 Rearrangement**.
 The data used in the expirement of the paper, is placed in the folder "input_families".
 In the paper we define two problems, *Constrained TreeToString Divergence (CTTSD)* and *TreeToString Divergence (TTSD)*.
-The input to CTTSD consists of two signed permutations of length $n$, $S_1=\sigma_1 \dotso \sigma_n \in \Sigma^n$, $|\Sigma|=n$, such that $\sigma_i \neq \sigma_j$ for all $1 <= i<j \leq n$, and $S_2=\lambda_1 \dotso \lambda_n \in \Sigma^n$ such that $\lambda_i \neq \lambda_j$ for all $1 \leq i<j \leq n$; a \pqt{} $T$ ordered as $S_1$ with $m_p$ P-nodes and $m_q$ Q-nodes; and two numbers $\delta^Q_{\mathsf{ord}}$ and $\delta^Q_{\mathsf{flip}}$. We aim to perform actions on $T$ to reorder it as $S_2$. That is, we reorder $T$ as $T'$ so that $F(T')=S_2$. We return the divergence from $T$ to $S_2$.
+The input to CTTSD consists of two signed permutations of length $n$, a \pqt{} $T$ ordered as $S_1$ with $m_p$ P-nodes and $m_q$ Q-nodes; and two numbers $\delta^Q_{\mathsf{ord}}$ and $\delta^Q_{\mathsf{flip}}$. We aim to perform actions on $T$ to reorder it as $S_2$. That is, we reorder $T$ as $T'$ so that $F(T')=S_2$. We return the divergence from $T$ to $S_2$.
 
 
 <a name='if'>Input Format</a>
